@@ -1,5 +1,7 @@
 import Kontaktfooter from '../../components/Footer/KontaktFooter';
-//import TeaserMain from '../../components/Teaser/TeaserMain';
+
+
+
 
 function Home() {
     return (
