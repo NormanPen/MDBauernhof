@@ -1,4 +1,5 @@
 import Kontaktfooter from '../../components/Footer/KontaktFooter';
+import TeaserMain from '../../components/TeaserMain/TeaserMain';
 
 
 
@@ -6,9 +7,14 @@ import Kontaktfooter from '../../components/Footer/KontaktFooter';
 function Home() {
     return (
         <div>
-            <h1>Herzlich Wilkommen auf unserem Hof</h1>
-            <p>Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem.</p>
-            <button>Jetzt entdecken</button>
+            <TeaserMain 
+                class="yellow"
+                ueberschrift="Herzlich Wilkommen auf unserem Hof" 
+                inhalt="Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem."
+                btnname="Jetzt entdecken"
+                target="/Kontakt">
+            </TeaserMain>
+            
 
             <h2>Willkommen</h2>
             <p>Erlebniswelt Bauernhof ist gegründet worden um: den Kindern direkt vor Ort die Natur nahezubringen, um Ihnen ein Gefühl für die Schönheit der "Schöpfung" zu vermitteln und die Welt auch noch für nachkommende Generationen in diesem Umfang zu erhalten.</p>
