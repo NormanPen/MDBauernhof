@@ -1,4 +1,4 @@
-import Kontaktfooter from '../components/KontaktFooter';
+import Kontaktfooter from '../../components/Footer/KontaktFooter';
 
 function Animals() {
     return (

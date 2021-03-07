@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-import Nav from './components/Nav';
-import Home from './sites/Home';
-import About from './sites/About';
-import Programm from './sites/Programm';
-import Animals from './sites/Animals';
-import Contact from './sites/Contact';
-import Footer from './components/Footer';
+import Nav from './components/Navigation/Nav';
+import Home from './sites/Home/Home';
+import About from './sites/About/About';
+import Programm from './sites/Programm/Programm';
+import Animals from './sites/Animals/Animals';
+import Contact from './sites/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 import './App.css';
 
