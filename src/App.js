@@ -6,6 +6,7 @@ import About from './sites/About';
 import Programm from './sites/Programm';
 import Animals from './sites/Animals';
 import Contact from './sites/Contact';
+import Footer from './components/Footer';
 
 import './App.css';
 
@@ -16,11 +17,12 @@ function App() {
         <Nav/>
         <Switch>
           <Route path="/" exact component={Home}></Route>
-          <Route path="/about" component={About}></Route>
-          <Route path="/programm" component={Programm}></Route>
-          <Route path="/animals" component={Animals}></Route>
-          <Route path="/contact" component={Contact}></Route>
+          <Route path="/Überuns" component={About}></Route>
+          <Route path="/Programm" component={Programm}></Route>
+          <Route path="/Tiere" component={Animals}></Route>
+          <Route path="/Kontakt" component={Contact}></Route>
         </Switch>
+        <Footer/>
       </div>
     </Router>
   );

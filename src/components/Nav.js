@@ -10,16 +10,16 @@ function Nav() {
         <Link to="/">
           <li>Home</li>
         </Link>
-        <Link to="/about">
+        <Link to="/Überuns">
           <li>Über Uns</li>
         </Link>
-        <Link to="/programm">
+        <Link to="/Programm">
           <li>Programm</li>
         </Link>
-        <Link to="/animals">
+        <Link to="/Tiere">
           <li>Unsere Tiere</li>
         </Link>
-        <Link to="/contact">
+        <Link to="/Kontakt">
           <li>Kontakt</li>
         </Link>
       </ul>
