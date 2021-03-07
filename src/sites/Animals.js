@@ -1,3 +1,5 @@
+import Kontaktfooter from '../components/KontaktFooter';
+
 function Animals() {
     return (
         <div>
@@ -12,6 +14,7 @@ function Animals() {
 
             <h2>Esel</h2>
             <p>Erlebniswelt Bauernhof ist gegründet worden um: den Kindern direkt vor Ort die Natur nahezubringen, um Ihnen ein Gefühl für die Schönheit der "Schöpfung" zu vermitteln und die Welt auch noch für nachkommende Generationen in diesem Umfang zu erhalten.</p>
+            <Kontaktfooter></Kontaktfooter>
         </div>
     );
 }

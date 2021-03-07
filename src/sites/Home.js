@@ -1,3 +1,5 @@
+import Kontaktfooter from '../components/KontaktFooter';
+
 function Home() {
     return (
         <div>
@@ -19,6 +21,7 @@ function Home() {
             <h2>Unsere Tiere</h2>
             <p>In this reinvented flick, which hovers like a Matisse cutout between the lashline and brow bone, curved crease of the eyelid, while the top is a long, flat line that extends past the outer corners.</p>
             <button>Tiere kennenlernen</button>
+            <Kontaktfooter></Kontaktfooter>
         </div>
     );
 }

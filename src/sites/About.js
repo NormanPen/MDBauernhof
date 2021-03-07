@@ -1,3 +1,5 @@
+import Kontaktfooter from '../components/KontaktFooter';
+
 function 
 About() {
     return (
@@ -14,6 +16,9 @@ About() {
             <h3>Der Hof</h3>
             <p>Auf dem Bauernhof in der 4. Generatinon gibt es viel zu entdecken.</p>
             <button>Zu unserem Programm</button>
+            <Kontaktfooter></Kontaktfooter>
+
+            
         </div>
     );
 }

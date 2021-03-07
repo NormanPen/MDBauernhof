@@ -1,3 +1,5 @@
+import Kontaktfooter from '../components/KontaktFooter';
+
 function Programm() {
     return (
         <div>
@@ -24,6 +26,7 @@ function Programm() {
 
             <h2>Weitere Angebote</h2>
             <p>Schulbauernhof, Ferienkinder, tiergestützte Pädagogik und -Therapie, Generation 50+</p>
+            <Kontaktfooter></Kontaktfooter>
         </div>
     );
 }
