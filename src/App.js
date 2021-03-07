@@ -8,6 +8,8 @@ import Animals from './sites/Animals/Animals';
 import Contact from './sites/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
+
+
 import './styles/App.scss';
 
 function App() {
