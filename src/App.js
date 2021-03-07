@@ -8,7 +8,7 @@ import Animals from './sites/Animals/Animals';
 import Contact from './sites/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
-import './App.css';
+import './styles/App.scss';
 
 function App() {
   return (
