@@ -2,13 +2,13 @@ import { Link } from 'react-router-dom';
 import './TeaserMain.scss';
 
 function TeaserMain(props) {
-    return(
+    return (
         <div className={props.class}>
             <h1>{props.ueberschrift}</h1>
             <p>{props.inhalt}</p>
             <Link to={props.target}>
-            <button>{props.btnname}</button>
-                </Link>
+                <button>{props.btnname}</button>
+            </Link>
         </div>
     );
 }
