@@ -1,5 +1,7 @@
 import Kontaktfooter from '../../components/Footer/KontaktFooter';
 import TeaserMain from '../../components/TeaserMain/TeaserMain';
+import TeaserL from '../../components/TeaserL/TeaserL';
+
 
 
 
@@ -14,6 +16,14 @@ function Home() {
                 btnname="Jetzt entdecken"
                 target="/Kontakt">
             </TeaserMain>
+
+            <TeaserL
+                ueberschrift="asdasd"
+                inhalt="hallo"
+            />
+
+            
+
             
 
             <h2>Willkommen</h2>
