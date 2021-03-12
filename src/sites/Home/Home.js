@@ -12,9 +12,10 @@ function Home() {
             <TeaserMain
                 class="yellow"
                 ueberschrift="Herzlich Wilkommen auf unserem Hof"
-                inhalt="Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem."
                 btnname="Jetzt entdecken"
-                target="/Kontakt">
+                target="/Kontakt"
+            >
+                Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem.
             </TeaserMain>
 
             <TeaserL

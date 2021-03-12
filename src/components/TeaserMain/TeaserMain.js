@@ -5,7 +5,7 @@ function TeaserMain(props) {
     return (
         <div className={props.class}>
             <h1>{props.ueberschrift}</h1>
-            <p>{props.inhalt}</p>
+            <p>{props.children}</p>
             <Link to={props.target}>
                 <button>{props.btnname}</button>
             </Link>
