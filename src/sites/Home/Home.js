@@ -1,6 +1,5 @@
 import Kontaktfooter from '../../components/Footer/KontaktFooter';
 import TeaserMain from '../../components/TeaserMain/TeaserMain';
-import TeaserL from '../../components/TeaserL/TeaserL';
 
 
 
@@ -17,11 +16,11 @@ function Home() {
             >
                 Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem.
             </TeaserMain>
+            <TeaserMain ueberschrift="Teaser">
+                Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem.{<button>Klick mich</button>}
+            </TeaserMain>
 
-            <TeaserL
-                ueberschrift="asdasd"
-                inhalt="hallo"
-            />
+
 
 
 

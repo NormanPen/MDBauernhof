@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Nav from './components/Navigation/Nav';
 import Home from './sites/Home/Home';
@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <div>
-        <Nav/>
+        <Nav />
         <Switch>
           <Route path="/" exact component={Home}></Route>
           <Route path="/Überuns" component={About}></Route>
@@ -24,7 +24,7 @@ function App() {
           <Route path="/Tiere" component={Animals}></Route>
           <Route path="/Kontakt" component={Contact}></Route>
         </Switch>
-        <Footer/>
+        <Footer />
       </div>
     </Router>
   );
