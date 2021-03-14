@@ -10,6 +10,7 @@ footer {
     list-style: none;
     margin-top: 0;
   }
+
   h3 {
     margin-top: 0;
   }
@@ -19,28 +20,36 @@ footer {
     font-size: 21px;
     color: white;
   }
+
   .footer-erleben {
     margin-top: 117px;
     margin-left: 133px;
   }
+
   .footer-kontakt {
     margin-top: 117px;
   }
+
   .footer-sozial {
     margin-top: 117px;
     margin-right: 320px;
-  }
-}
-.icon {
-  display: inline-block;
-  width: 54px;
-  height: 54px;
-  background-size: cover;
-}
 
-.icon-arrow {
-  background-image: url("../../images/icons/facebooklogo.svg");
-  &:hover {
-    background-image: url("../../images/icons/facebookhover.svg");
+    .social-media-icon {
+      width: 54px;
+      height: 54px;
+    }
+
+    .social-media-icon-facebook {
+      background-image: url("../../images/icons/facebooklogo.svg");
+      &:hover {
+        background-image: url("../../images/icons/facebookhover.svg");
+      }
+    }
+    .social-media-icon-instagram {
+      background-image: url("../../images/icons/instagrammlogo.svg");
+      &:hover {
+        background-image: url("../../images/icons/instagramhover.svg");
+      }
+    }
   }
 }

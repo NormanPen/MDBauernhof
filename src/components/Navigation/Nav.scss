@@ -3,7 +3,7 @@
   background-color: white;
   justify-content: space-between;
   align-items: center;
-  font-family: "Atma", cursive;
+  font-family: "Atma", medium;
   color: #003f81;
   .burger-menu {
     display: block;
@@ -19,16 +19,18 @@
       ul {
         margin-right: 52px;
         list-style: none;
-
         padding: 0;
 
         li {
           display: inline;
           margin-left: 50px;
-          font-size: 21px;
+          font-size: 24px;
         }
         a {
           text-decoration: none;
+        }
+        li:hover {
+          border-bottom: solid #003f81 3px;
         }
       }
     }

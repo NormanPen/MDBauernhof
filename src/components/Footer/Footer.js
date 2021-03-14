@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 
 import "./Footer.scss";
 
-import instalogo from "../../images/icons/Instagramlogo.svg";
-
 function Footer() {
   return (
     <footer>
@@ -36,26 +34,25 @@ function Footer() {
       </div>
 
       <div className="footer-sozial">
-        <div className="footer-sozial-background">
-          <a
-            href={
-              "https://www.facebook.com/Erlebniswelt-Bauernhof-401255466649319/"
-            }
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="icon facebooklink" />
-          </a>
-        </div>
-        <div>
-          <a
-            href={"https://www.instagram.com/erlebniswelt_bauernhof/"}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="icon icon-arrow"></div>
-          </a>
-        </div>
+        <a
+          href={
+            "https://www.facebook.com/Erlebniswelt-Bauernhof-401255466649319/"
+          }
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="social-media-icon social-media-icon-facebook"></div>
+        </a>
+
+        <a
+          href={
+            "https://www.facebook.com/Erlebniswelt-Bauernhof-401255466649319/"
+          }
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="social-media-icon social-media-icon-instagram"></div>
+        </a>
       </div>
     </footer>
   );
