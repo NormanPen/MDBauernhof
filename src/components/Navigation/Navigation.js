@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./Nav.scss";
-import logo from "../../images/MDBauernhofLogo.png";
+import logo from "../../images/MDBauernhofLogo.svg";
 
 function Navigation() {
   return (

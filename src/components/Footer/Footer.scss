@@ -1,9 +1,36 @@
-#asd {
-    background-color: #5092CD;
+footer {
+  font-family: "Atma", cursive;
+  background-color: #5092cd;
+  font-size: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 
-    a {
-        color: white;
+  ul {
+    list-style: none;
+    margin-top: 0;
+  }
+  h3 {
+    margin-top: 0;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 21px;
+    color: white;
+  }
+  .footer-erleben {
+    margin-top: 117px;
+    margin-left: 133px;
+  }
+  .footer-kontakt {
+    margin-top: 117px;
+  }
+  .footer-sozial {
+    margin-top: 117px;
+    margin-right: 320px;
+    img {
+      margin-right: 20px;
     }
-
+  }
 }
-
