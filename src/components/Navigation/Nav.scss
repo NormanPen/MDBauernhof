@@ -1,5 +1,10 @@
 .nav-container {
   display: none;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Atma", cursive;
+  color: #003f81;
   .burger-menu {
     display: block;
   }
@@ -7,13 +12,7 @@
 
 @media only screen and (min-width: 1000px) {
   .nav-container {
-    background-color: white;
-
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "Atma", cursive;
-    color: #003f81;
 
     ///////////////////Unser Nav
     nav {
@@ -42,8 +41,4 @@
   .burger-menu {
     display: none;
   }
-}
-
-///////////////////Burger Menu
-@media only screen and (min-width: 1000px) {
 }
