@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import "./Footer.scss";
 
-import fblogo from "../../images/icons/facebooklogo.svg";
 import instalogo from "../../images/icons/Instagramlogo.svg";
 
 function Footer() {
@@ -36,16 +36,26 @@ function Footer() {
       </div>
 
       <div className="footer-sozial">
-        <a
-          href={
-            "https://www.facebook.com/Erlebniswelt-Bauernhof-401255466649319/"
-          }
-        >
-          <img src={fblogo} alt="fblogo" />
-        </a>
-        <a href={"https://www.instagram.com/erlebniswelt_bauernhof/"}>
-          <img src={instalogo} alt="instalogo" />
-        </a>
+        <div className="footer-sozial-background">
+          <a
+            href={
+              "https://www.facebook.com/Erlebniswelt-Bauernhof-401255466649319/"
+            }
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="icon facebooklink" />
+          </a>
+        </div>
+        <div>
+          <a
+            href={"https://www.instagram.com/erlebniswelt_bauernhof/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="icon icon-arrow"></div>
+          </a>
+        </div>
       </div>
     </footer>
   );
