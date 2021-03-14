@@ -1,0 +1,49 @@
+.nav-container {
+  display: none;
+  .burger-menu {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .nav-container {
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Atma", cursive;
+    color: #003f81;
+
+    ///////////////////Unser Nav
+    nav {
+      ul {
+        margin-right: 52px;
+        list-style: none;
+
+        padding: 0;
+
+        li {
+          display: inline;
+          margin-left: 50px;
+          font-size: 21px;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+    ///////////////////Logo
+    img {
+      background-color: white;
+      margin-left: 3rem;
+    }
+  }
+  .burger-menu {
+    display: none;
+  }
+}
+
+///////////////////Burger Menu
+@media only screen and (min-width: 1000px) {
+}

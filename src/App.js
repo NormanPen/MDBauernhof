@@ -1,22 +1,20 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Nav from './components/Navigation/Nav';
-import Home from './sites/Home/Home';
-import About from './sites/About/About';
-import Programm from './sites/Programm/Programm';
-import Animals from './sites/Animals/Animals';
-import Contact from './sites/Contact/Contact';
-import Footer from './components/Footer/Footer';
+import Navigation from "./components/Navigation/Navigation";
+import Home from "./sites/Home/Home";
+import About from "./sites/About/About";
+import Programm from "./sites/Programm/Programm";
+import Animals from "./sites/Animals/Animals";
+import Contact from "./sites/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
-
-
-import './styles/App.scss';
+import "./styles/App.scss";
 
 function App() {
   return (
     <Router>
       <div>
-        <Nav />
+        <Navigation />
         <Switch>
           <Route path="/" exact component={Home}></Route>
           <Route path="/Überuns" component={About}></Route>
