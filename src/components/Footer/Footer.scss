@@ -9,16 +9,21 @@ footer {
   ul {
     list-style: none;
     margin-top: 0;
+    a {
+      text-decoration: none;
+      font-size: 21px;
+      color: white;
+    }
+    li {
+      margin-bottom: 8px;
+      &:hover {
+        color: #003f81;
+      }
+    }
   }
 
   h3 {
     margin-top: 0;
-  }
-
-  a {
-    text-decoration: none;
-    font-size: 21px;
-    color: white;
   }
 
   .footer-erleben {
@@ -31,6 +36,7 @@ footer {
   }
 
   .footer-sozial {
+    display: flex;
     margin-top: 117px;
     margin-right: 320px;
 
@@ -46,6 +52,7 @@ footer {
       }
     }
     .social-media-icon-instagram {
+      margin-left: 33px;
       background-image: url("../../images/icons/instagrammlogo.svg");
       &:hover {
         background-image: url("../../images/icons/instagramhover.svg");
