@@ -1,4 +1,14 @@
+@import "/src/styles/variables.scss";
+
 body {
   display: flex;
-  background-color: white;
+}
+.home {
+ 
+  background-image: url("../images/OvalHellblau.svg");
+
+  
+}
+.about {
+  background-image: url("../images/OvalHellGelb.svg");
 }

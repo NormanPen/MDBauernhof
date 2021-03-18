@@ -6,6 +6,10 @@ footer {
   display: flex;
   justify-content: space-between;
 
+  h3 {
+    margin-top: 0;
+  }
+
   ul {
     list-style: none;
     margin-top: 0;
@@ -20,10 +24,6 @@ footer {
         color: #003f81;
       }
     }
-  }
-
-  h3 {
-    margin-top: 0;
   }
 
   .footer-erleben {
