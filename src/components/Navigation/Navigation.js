@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Burger from "./Burger/Burger";
 
 import "./Navigation.scss";
 import logo from "../../images/MDBauernhofLogo.svg";
@@ -29,7 +30,7 @@ function Navigation() {
           </ul>
         </nav>
       </div>
-      <button className="burger-menu">Menü</button>
+      <Burger className="burger-menu"></Burger>
     </div>
   );
 }
