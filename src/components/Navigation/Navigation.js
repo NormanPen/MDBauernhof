@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Burger from "./Burger/Burger";
+import Burger from "./Burger";
 
 import "./Navigation.scss";
 import logo from "../../images/MDBauernhofLogo.svg";
@@ -30,6 +30,7 @@ function Navigation() {
           </ul>
         </nav>
       </div>
+      
       <Burger className="burger-menu"></Burger>
     </div>
   );

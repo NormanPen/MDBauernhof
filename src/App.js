@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Navigation from "./components/Navigation/Navigation";
+//import Navigation from "./components/Navigation/Navigation";
+import Burger from "./components/Navigation/Burger";
+
 import Home from "./sites/Home/Home";
 import About from "./sites/About/About";
 import Programm from "./sites/Programm/Programm";
@@ -14,7 +16,8 @@ function App() {
   return (
     <Router>
       <div>
-        <Navigation />
+        <Burger />
+
         <Switch>
           <Route path="/" exact component={Home}></Route>
           <Route path="/Überuns" component={About}></Route>

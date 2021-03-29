@@ -44,3 +44,25 @@
     display: none;
   }
 }
+
+.burger-menu {
+  display: inline-block;
+  width: 25px;
+  cursor: pointer;
+}
+.burger-line {
+  height: 3px;
+  margin-bottom: 3px;
+  background: #4d4d4d;
+  transition: all 0.4s ease; /* important for animation */
+}
+
+.burger-menu.active .burger-line:last-child {
+  opacity: 0;
+}
+.burger-menu.active .burger-line:first-child {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+.burger-menu.active .burger-line:nth-child(2) {
+  transform: rotate(-45deg);
+}
