@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-//import Navigation from "./components/Navigation/Navigation";
-import Burger from "./components/Navigation/Burger";
+import Navigation from "./components/Navigation/Navigation";
 
 import Home from "./sites/Home/Home";
 import About from "./sites/About/About";
@@ -16,7 +15,7 @@ function App() {
   return (
     <Router>
       <div>
-        <Burger />
+        <Navigation />
 
         <Switch>
           <Route path="/" exact component={Home}></Route>
