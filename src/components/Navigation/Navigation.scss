@@ -1,3 +1,5 @@
+@import "../../styles/Sass/mixins.scss";
+
 .nav-container {
   display: none;
   justify-content: space-between;
@@ -7,6 +9,42 @@
   color: #003f81;
 }
 
+@include respond-desktop {
+  .burger-menu {
+    display: none;
+  }
+  .nav-container {
+    display: flex;
+
+    ///////////////////Unser Nav
+    nav {
+      ul {
+        margin-right: 52px;
+        list-style: none;
+        padding: 0;
+
+        li {
+          display: inline;
+          margin-left: 50px;
+          font-size: 24px;
+        }
+        a {
+          text-decoration: none;
+        }
+        li:hover {
+          border-bottom: solid #003f81 3px;
+        }
+      }
+    }
+    ///////////////////Logo
+    img {
+      background-color: white;
+      margin-left: 3rem;
+    }
+  }
+}
+
+/*
 @media only screen and (min-width: 1000px) {
   .nav-container {
     display: flex;
@@ -38,3 +76,4 @@
     }
   }
 }
+*/

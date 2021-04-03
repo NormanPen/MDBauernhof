@@ -1,0 +1,46 @@
+//MEDIA QUERY MANAGER
+/* 
+0-320px: Mobile S
+321-375px: Mobile M
+376-425px: Mobile L
+426-768px: Tablet
+769 -1024px: Desktop
+1025-1440px: Dektop L
+>= 1441px: Desktop XL
+*/
+
+@mixin respond-mobile-m {
+  @media (min-width: 321px) {
+    @content;
+  }
+}
+
+@mixin respond-mobile-l {
+  @media (min-width: 376px) {
+    @content;
+  }
+}
+
+@mixin respond-tablet {
+  @media (min-width: 426px) {
+    @content;
+  }
+}
+
+@mixin respond-desktop {
+  @media (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin respond-desktop-l {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin respond-desktop-xl {
+  @media (min-width: 1441px) {
+    @content;
+  }
+}

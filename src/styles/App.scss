@@ -1,6 +1,25 @@
-@import "/src/styles/variables.scss";
-
+@import "./Sass/mixins.scss";
 body {
   display: flex;
-  background-image: url("../images/OvalHellblau.svg");
+  // background-image: url("../images/OvalHellblau.svg");
+  background-color: aqua;
+
+  @include respond-mobile-m {
+    background-color: burlywood;
+  }
+  @include respond-mobile-l {
+    background-color: fuchsia;
+  }
+  @include respond-tablet {
+    background-color: gold;
+  }
+  @include respond-desktop {
+    background-color: blueviolet;
+  }
+  @include respond-desktop-l {
+    background-color: blue;
+  }
+  @include respond-desktop-xl {
+    background-color: red;
+  }
 }

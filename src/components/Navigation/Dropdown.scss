@@ -1,5 +1,7 @@
 .burger-menu {
   display: inline-block;
+  justify-content: right;
+
   width: 25px;
   cursor: pointer;
   padding: 25px;
@@ -24,13 +26,13 @@
 
 .dropdown-menu-on {
   display: block;
+  min-height: 1000px;
 }
 .dropdown-menu-off {
   display: none;
 }
 
 .dropdown {
-  min-height: 100%;
+  display: flex;
   width: 100%;
-  background-color: green;
 }
