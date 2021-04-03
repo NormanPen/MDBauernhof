@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { MenuItems } from "./MenuItems";
+import { MenuItems } from "../Data/MenuItems";
 import Dropdown from "./Dropdown";
 
 import "./Navigation.scss";
@@ -8,10 +8,11 @@ import logo from "../../images/MDBauernhofLogo.svg";
 
 function Navigation() {
   return (
-    <div className="Navigation">
+    <div className="navigation">
+      <img src={logo} alt="Logo" className="logo" />
       <Dropdown />
+
       <div className="nav-container">
-        <img src={logo} alt="Logo" className="logo" />
         <nav class="user-nav">
           <ul>
             {MenuItems.map((item, index) => {

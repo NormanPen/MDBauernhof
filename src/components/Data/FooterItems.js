@@ -1,9 +1,6 @@
-export const MenuItems = [
-    {
-        title: 'Home',
-        path: '/',
-        className: 'dropdonw-Link'
-    },
+
+export const ErlebenItems = [
+
     {
         title: 'Über Uns',
         path: '/überuns',
@@ -18,10 +15,19 @@ export const MenuItems = [
         title: 'Tiere',
         path: '/tiere',
         className: 'dropdonw-Link'
-    },
+    }
+]
+export const KontaktItems = [
+
     {
         title: 'Kontakt',
         path: '/kontakt',
         className: 'dropdonw-Link'
     },
+    {
+        title: 'Impressum',
+        path: '/impressum',
+        className: 'dropdonw-Link'
+    }
 ]
+

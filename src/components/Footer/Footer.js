@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { ErlebenItems, KontaktItems } from "../Data/FooterItems";
 
 import "./Footer.scss";
 
@@ -9,27 +10,30 @@ function Footer() {
       <div className="footer-erleben">
         <ul>
           <h3>Erleben</h3>
-          <Link to="/Überuns">
-            <li>Über Uns</li>
-          </Link>
-          <Link to="/Programm">
-            <li>Programm und kindergeburtstage</li>
-          </Link>
-          <Link to="/Tiere">
-            <li>Unsere Tiere</li>
-          </Link>
+          {ErlebenItems.map((item, index) => {
+            return (
+              <li key={index}>
+                <Link className={item.className} to={item.path}>
+                  {item.title}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
 
       <div className="footer-kontakt">
         <ul>
           <h3>Kontakt</h3>
-          <Link to="/Kontakt">
-            <li>Kontakt</li>
-          </Link>
-          <Link to="/Impressum">
-            <li>Impressum</li>
-          </Link>
+          {KontaktItems.map((item, index) => {
+            return (
+              <li key={index}>
+                <Link className={item.className} to={item.path}>
+                  {item.title}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
 
