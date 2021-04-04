@@ -14,7 +14,7 @@ import "./styles/App.scss";
 function App() {
   return (
     <Router>
-      <div>
+      <div className="seite">
         <Navigation />
 
         <Switch>

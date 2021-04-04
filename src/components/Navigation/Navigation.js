@@ -13,7 +13,7 @@ function Navigation() {
       <Dropdown />
 
       <div className="nav-container">
-        <nav class="user-nav">
+        <nav>
           <ul>
             {MenuItems.map((item, index) => {
               return (

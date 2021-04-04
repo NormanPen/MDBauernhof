@@ -2,26 +2,26 @@ export const MenuItems = [
     {
         title: 'Home',
         path: '/',
-        className: 'dropdonw-Link'
+        className: 'dropdown-link-home'
     },
     {
         title: 'Über Uns',
         path: '/überuns',
-        className: 'dropdonw-Link'
+        className: 'dropdown-link-about'
     },
     {
         title: 'Programm',
         path: '/programm',
-        className: 'dropdonw-Link'
+        className: 'dropdown-link-programm'
     },
     {
         title: 'Tiere',
         path: '/tiere',
-        className: 'dropdonw-Link'
+        className: 'dropdown-link-animals'
     },
     {
         title: 'Kontakt',
         path: '/kontakt',
-        className: 'dropdonw-Link'
+        className: 'dropdown-link-contact'
     },
 ]

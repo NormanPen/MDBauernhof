@@ -12,22 +12,22 @@ function Dropdown(props) {
 
   return (
     <div className="dropdown">
-      <div
-        onClick={handleClick}
-        className={`burger-menu ${click ? "active" : ""}`}
-      >
-        <div>
+      <div className="menu-button">
+        <div
+          onClick={handleClick}
+          className={`burger-item ${click ? "active" : ""}`}
+        >
           <div className="burger-line"></div>
           <div className="burger-line"></div>
           <div className="burger-line"></div>
         </div>
-        <div className="burger-txt">{click ? "Menü" : "schließen"}</div>
+        <p>{click ? "schließen" : "Menü"}</p>
       </div>
 
-      <nav class="dropdown">
+      <nav>
         <ul
           onClick={handleClick}
-          className={click ? "dropdown-menu-on" : "dropdown-menu-off"}
+          className={click ? "dropdown-menu" : "dropdown-menu-off"}
         >
           {MenuItems.map((item, index) => {
             return (
@@ -38,6 +38,27 @@ function Dropdown(props) {
               </li>
             );
           })}
+          <div className="footer-sozial">
+        <a
+          href={
+            "https://www.facebook.com/Erlebniswelt-Bauernhof-401255466649319/"
+          }
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="social-media-icon social-media-icon-facebook"></div>
+        </a>
+
+        <a
+          href={
+            "https://www.facebook.com/Erlebniswelt-Bauernhof-401255466649319/"
+          }
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="social-media-icon social-media-icon-instagram"></div>
+        </a>
+      </div>
         </ul>
       </nav>
     </div>

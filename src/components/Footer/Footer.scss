@@ -1,61 +1,75 @@
+@import "../../styles/Sass/mixins.scss";
+@import "../../styles/Sass/variables.scss";
+
 footer {
-  font-family: "Atma", cursive;
-  background-color: #5092cd;
+  background-color: $color-blue-middle;
   font-size: 30px;
   list-style: none;
-  display: flex;
-  justify-content: space-between;
-
-  h3 {
-    margin-top: 0;
-  }
 
   ul {
     list-style: none;
-    margin-top: 0;
+    padding-top: 42px;
+    padding-left: 55px;
     a {
       text-decoration: none;
       font-size: 21px;
-      color: white;
+      color: $color-white;
     }
-    li {
-      margin-bottom: 8px;
-      &:hover {
-        color: #003f81;
-      }
-    }
-  }
-
-  .footer-erleben {
-    margin-top: 117px;
-    margin-left: 133px;
-  }
-
-  .footer-kontakt {
-    margin-top: 117px;
   }
 
   .footer-sozial {
     display: flex;
-    margin-top: 117px;
-    margin-right: 320px;
+    padding: 42px 0 55px 55px;
 
     .social-media-icon {
       width: 54px;
       height: 54px;
     }
+  }
+  .social-media-icon-facebook {
+    background-image: url("../../images/icons/facebooklogo.svg");
+  }
+  .social-media-icon-instagram {
+    margin-left: 33px;
+    background-image: url("../../images/icons/instagrammlogo.svg");
+  }
+}
 
-    .social-media-icon-facebook {
-      background-image: url("../../images/icons/facebooklogo.svg");
-      &:hover {
-        background-image: url("../../images/icons/facebookhover.svg");
+@include respond-desktop {
+  footer {
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      margin-top: 0;
+    }
+
+    ul {
+      li {
+        margin-bottom: 8px;
+        &:hover {
+          color: #003f81;
+        }
       }
     }
-    .social-media-icon-instagram {
-      margin-left: 33px;
-      background-image: url("../../images/icons/instagrammlogo.svg");
-      &:hover {
-        background-image: url("../../images/icons/instagramhover.svg");
+
+    .footer-erleben {
+      margin-top: 117px;
+      margin-left: 133px;
+    }
+
+    .footer-kontakt {
+      margin-top: 117px;
+    }
+
+    .footer-sozial {
+      display: flex;
+      margin-top: 117px;
+      margin-right: 320px;
+
+      .social-media-icon {
+        width: 54px;
+        height: 54px;
       }
     }
   }

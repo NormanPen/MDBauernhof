@@ -1,38 +1,113 @@
-.burger-menu {
-  display: inline-block;
-  justify-content: right;
+@import "../../styles/Sass/variables.scss";
 
-  width: 25px;
-  cursor: pointer;
-  padding: 25px;
+// Menu button
+
+.menu-button {
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  right: 0px;
+  padding: 20px 20px 0 0;
+  height: 55px;
+  width: 60px;
+
+  p {
+    margin: 0;
+    color: $color-blue-dark;
+  }
+  .burger-item {
+    width: 25px;
+    padding: 0 0 5px 17px;
+    cursor: pointer;
+  }
 }
+
+// Burger icon
 
 .burger-line {
   height: 3px;
-  margin-bottom: 3px;
-  background: #4d4d4d;
+  margin-bottom: 4px;
+  background: $color-blue-dark;
   transition: all 0.4s ease; /* important for animation */
 }
 
-.burger-menu.active .burger-line:last-child {
+.burger-item.active .burger-line:last-child {
   opacity: 0;
 }
-.burger-menu.active .burger-line:first-child {
+.burger-item.active .burger-line:first-child {
   transform: rotate(45deg) translate(4px, 4px);
 }
-.burger-menu.active .burger-line:nth-child(2) {
+.burger-item.active .burger-line:nth-child(2) {
   transform: rotate(-45deg);
 }
 
+// Dropdown Menu
+/*
 .dropdown-menu-on {
-  display: block;
-  min-height: 1000px;
+  //display: inline-block;
+  // min-height: 1000px;
 }
+*/
 .dropdown-menu-off {
   display: none;
 }
+.dropdown-menu {
+  position: absolute;
+  min-height: 100vh;
+  height: 100vh;
+  min-width: 100%;
+  padding: 50px 0 0 0;
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+  background-color: $color-white;
+  list-style: none;
+  li {
+    padding-bottom: 34px;
+    a {
+      text-decoration: none;
+    }
+  }
+  .dropdown-link-home {
+    color: $color-blue-dark;
+  }
+  .dropdown-link-about {
+    color: $color-yellow;
+  }
+  .dropdown-link-programm {
+    color: $color-rosa;
+  }
+  .dropdown-link-animals {
+    color: $color-green;
+  }
+  .dropdown-link-contact {
+    color: $color-brown;
+  }
+}
 
 .dropdown {
-  display: flex;
-  width: 100%;
+  .footer-sozial {
+    display: flex;
+    justify-content: center;
+
+    .social-media-icon {
+      margin-right: 16.5px;
+      margin-left: 16.5px;
+      width: 54px;
+      height: 54px;
+    }
+
+    .social-media-icon-facebook {
+      background-image: url("../../images/icons/facebooklogo.svg");
+      &:hover {
+        background-image: url("../../images/icons/facebookhover.svg");
+      }
+    }
+    .social-media-icon-instagram {
+      background-image: url("../../images/icons/instagrammlogo.svg");
+      &:hover {
+        background-image: url("../../images/icons/instagramhover.svg");
+      }
+    }
+  }
 }

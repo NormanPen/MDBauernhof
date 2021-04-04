@@ -1,8 +1,8 @@
 @import "./Sass/mixins.scss";
 body {
-  display: flex;
+  //display: flex;
   // background-image: url("../images/OvalHellblau.svg");
-  background-color: aqua;
+  //background-color: aqua;
 
   @include respond-mobile-m {
     background-color: burlywood;

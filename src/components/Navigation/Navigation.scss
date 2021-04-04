@@ -1,4 +1,15 @@
 @import "../../styles/Sass/mixins.scss";
+@import "../../styles/Sass/variables.scss";
+
+.navigation {
+  img {
+    padding: 20px 0 0 20px;
+  }
+
+  .burger-menu {
+    padding: 20px 20px 0 0;
+  }
+}
 
 .nav-container {
   display: none;
@@ -6,11 +17,11 @@
   align-items: center;
   font-family: "Atma", medium;
   background-color: transparent;
-  color: #003f81;
+  color: $color-blue-dark;
 }
 
 @include respond-desktop {
-  .burger-menu {
+  .dropdown {
     display: none;
   }
   .nav-container {
