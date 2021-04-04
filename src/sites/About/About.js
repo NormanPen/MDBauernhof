@@ -1,4 +1,5 @@
 import Kontaktfooter from "../../components/Footer/KontaktFooter";
+import Button from "../../components/Buttons/Button";
 import "./About.scss";
 
 function About() {
@@ -11,6 +12,9 @@ function About() {
         Bauernhof. In einem Kurs der Landwirtschaftskammer erwarb sie das nötige
         Know-how.{" "}
       </p>
+      <Button target="/">
+        Test Button
+      </Button>
       <button>Jetzt entdecken</button>
 
       <h2>Willkommen</h2>
