@@ -3,21 +3,16 @@ import TeaserMain from "../../components/TeaserMain/TeaserMain";
 
 import "./Home.scss";
 
+import bauernhof from "../../images/Bauernhof.png";
+
 function Home() {
   return (
     <div className="home">
-      <TeaserMain
-        class="yellow"
-        ueberschrift="Herzlich Wilkommen auf unserem Hof"
-        btnname="Jetzt entdecken"
-        target="/Kontakt"
-      >
-        Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem.
-      </TeaserMain>
-      <TeaserMain ueberschrift="Teaser">
-        Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem.
-        {<button>Klick mich</button>}
-      </TeaserMain>
+      <div className="test">
+        <img src={bauernhof} alt="Logo" className="logo" />
+        <h1>Herzlich Willkommen auf unserem Hof</h1>
+        <p>Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem.</p>
+      </div>
 
       <h2>Willkommen</h2>
       <p>
