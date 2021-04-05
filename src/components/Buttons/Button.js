@@ -4,7 +4,7 @@ import "./Button.scss";
 function Button(props) {
   return (
     <Link to={props.target}>
-      <button className={"btn"}>{props.children}</button>
+      <button className={"btn btn-"+ props.variant}>{props.children}</button>
     </Link>
   );
 }

@@ -1,12 +1,21 @@
 @import "../../styles/Sass/variables.scss";
 
 .btn {
-  border: none;
-  border-radius: 15%;
-  background-color: chartreuse;
-  font-family: Signika-Negative;
-  font-size: 18px;
-  text-align: center;
-  text-decoration: none;
+  background-color: aqua;
+  border-radius: 28px;
   display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Segnita Negativ;
+  font-size: 18px;
+  padding: 16px 31px;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-blue {
+  background-color: $color-blue-middle;
+  &:hover {
+    background-color: $color-blue-light;
+  }
 }

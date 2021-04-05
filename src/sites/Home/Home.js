@@ -2,18 +2,24 @@ import Kontaktfooter from "../../components/Footer/KontaktFooter";
 import TeaserMain from "../../components/TeaserMain/TeaserMain";
 
 import "./Home.scss";
-
-import bauernhof from "../../images/Bauernhof.png";
+import Button from "../../components/Buttons/Button";
+//import bauernhof from "../../images/Bauernhof.png";
+//import ovalhellblau from "../../images/OvalHellblau.svg";
 
 function Home() {
   return (
     <div className="home">
-      <div className="test">
-        <img src={bauernhof} alt="Logo" className="logo" />
-        <h1>Herzlich Willkommen auf unserem Hof</h1>
-        <p>Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem.</p>
-      </div>
-
+      <Button target="/programm"></Button>
+      <TeaserMain
+        ueberschrift="Hi"
+        variant="blue"
+        target="/programm"
+        btnText="asdasads"
+      >
+        asdasdasdasd
+      </TeaserMain>
+      <h1>Herzlich Willkommen auf unserem Hof</h1>
+      <p>Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem.</p>
       <h2>Willkommen</h2>
       <p>
         Erlebniswelt Bauernhof ist gegründet worden um: den Kindern direkt vor

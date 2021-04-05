@@ -1,11 +1,14 @@
-.yellow {
-    color:yellow
-}
+@import "../../styles/Sass/variables.scss";
 
-.green {
-    color:green;
-}
-
-.bg {
-    background-color: black;
+.teaser-btn {
+  background-color: $color-blue-middle;
+  border-radius: 28px;
+  display: inline-block;
+  cursor: pointer;
+  color: $color-white;
+  font-family: Segnita Negativ;
+  font-size: 18px;
+  padding: 16px 31px;
+  text-decoration: none;
+  border: none;
 }
