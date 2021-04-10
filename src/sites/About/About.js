@@ -12,12 +12,10 @@ function About() {
         Bauernhof. In einem Kurs der Landwirtschaftskammer erwarb sie das nötige
         Know-how.{" "}
       </p>
-      <Button target="/">
-        Test Button
-      </Button>
+      <Button target="/">Test Button</Button>
       <button>Jetzt entdecken</button>
 
-      <h2>Willkommen</h2>
+      <h2 id="willkommen">Willkommen</h2>
       <p>
         Erlebniswelt Bauernhof ist gegründet worden um: den Kindern direkt vor
         Ort die Natur nahezubringen, um Ihnen ein Gefühl für die Schönheit der

@@ -3,13 +3,17 @@ import TeaserMain from "../../components/TeaserMain/TeaserMain";
 
 import "./Home.scss";
 import Button from "../../components/Buttons/Button";
+import ScrollToElementButton from "../../components/Buttons/ScrollToElementButton";
+import Sprunglink from "../../components/Buttons/Sprunglink";
 //import bauernhof from "../../images/Bauernhof.png";
 //import ovalhellblau from "../../images/OvalHellblau.svg";
 
 function Home() {
   return (
     <div className="home">
-      <Button target="/programm"></Button>
+     <ScrollToElementButton></ScrollToElementButton> 
+      <Sprunglink></Sprunglink>
+      <Button target="#willkommen"></Button>
       <TeaserMain
         ueberschrift="Hi"
         variant="blue"
@@ -18,7 +22,7 @@ function Home() {
       >
         asdasdasdasd
       </TeaserMain>
-      <h1>Herzlich Willkommen auf unserem Hof</h1>
+      <h1 id="willkommen">Herzlich Willkommen auf unserem Hof</h1>
       <p>Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem.</p>
       <h2>Willkommen</h2>
       <p>
