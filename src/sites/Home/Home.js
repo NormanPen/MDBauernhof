@@ -1,22 +1,47 @@
 import Kontaktfooter from "../../components/Footer/KontaktFooter";
-import TeaserMain from "../../components/TeaserMain/TeaserMain";
+import Header from "../../components/Header/Header";
+import TextModule from "../../components/TextModule/TextModule"
 
 import "./Home.scss";
 
-function Home() {
+const home = {
+  header: {
+    headerHeadline: "Herzlich Willkommen auf unserem Hof",
+    btnText: "Jetzt Entdecken",
+    btnTarget: "/überuns",
+    headerText:"Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem.",
+    headerImage: "adasads",
+    headerImageAlt: "Bauerhof"
+  },
+  TextModule: {
+    headline: "Willkommen",
+    text: 'Erlebniswelt Bauernhof ist gegründet worden um: den Kindern direkt vor Ort die Natur nahezubringen, um Ihnen ein Gefühl für die Schönheit der "Schöpfung" zu vermitteln und die Welt auch noch für nachkommende Generationen in diesem Umfang zu erhalten.'
+  }
+  
+}
+function Home(props) {
+
+
   return (
     <div className="home">
     
       
-      <TeaserMain
-        ueberschrift="Hi"
-        variant="blue"
-        target="/programm"
-        btnText="asdasads"
-      >
-        asdasdasdasd
-      </TeaserMain>
-      <h1>Herzlich Willkommen auf unserem Hof</h1>
+      <Header
+      headerHeadline={home.header.headerHeadline}
+      btnText={home.header.btnText}
+      btnTarget={home.header.btnTarget}
+      
+      headerImage={home.header.headerImage}
+      headerImageAlt={home.header.headerImageAlt}>{home.header.headerText}</Header>
+
+<main>
+        <TextModule 
+        textModuleHeadline={home.TextModule.headline}
+        textModuleText={home.TextModule.text}/>
+
+
+      </main>
+
       <p>Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem.</p>
       <h2>Willkommen</h2>
       <p>

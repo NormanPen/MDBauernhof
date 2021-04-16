@@ -1,16 +1,26 @@
 import Button from "../Buttons/Button";
 
 function Header(props) {
-  //Bild
+  return (
+    <div>
+
+    
+ 
+
+
   <header>
-    <img src={props.img} alt={props.imgAlt} className="img-header" />
-  </header>;
-  // H1
+    <h1>{props.headerHeadline}</h1>
+    <p>{props.children}</p>
+    <Button btnClassName="btn btn-blue"
+            btnTarget={props.btnTarget}
+            btnText={props.btnText} />
+    <img src={props.headerImage} alt={props.headerImageAlt}></img>
+  </header>
 
-  //Text
-
-  // Button extra Komponente
-  <Button></Button>
+  
+ 
+  </div>
+  );
 }
 
 export default Header;
